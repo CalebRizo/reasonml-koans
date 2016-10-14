@@ -8,5 +8,5 @@ Koans for the Reason programming language.
 git clone https://github.com/inchingforward/reasonml-koans.git
 cd reasonml-koans
 npm install
-npm start
+npm run koans 
 ```
