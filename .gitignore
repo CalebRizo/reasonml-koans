@@ -14,4 +14,5 @@ _build/**
 *.opt
 
 node_modules
+npm-debug.log
 *.native

@@ -27,11 +27,11 @@
   "scripts": {
 
     "postinstall": "npm run reasonBuild",
-    "reasonBuild": "eval $(dependencyEnv) && nopam && rebuild -I src ./src/Test.native 2>&1 | refmterr",
+    "reasonBuild": "eval $(dependencyEnv) && nopam && rebuild -I src ./src/Koans.native 2>&1 | refmterr",
     "reasonbuild": "npm run reasonBuild",
 
-    "start": "eval $(dependencyEnv) && ./_build/src/Test.native",
-    "koans": "eval $(dependencyEnv) && npm run reasonbuild && ./_build/src/Test.native",
+    "start": "eval $(dependencyEnv) && ./_build/src/Koans.native",
+    "koans": "eval $(dependencyEnv) && npm run reasonbuild && ./_build/src/Koans.native",
 
     "clean": "eval $(dependencyEnv) && nopam && rebuild -clean",
     "top": "eval $(dependencyEnv) && rtop",
