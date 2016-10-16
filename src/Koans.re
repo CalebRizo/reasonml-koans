@@ -1,3 +1,14 @@
-print_string "Hello Koans\n";
+/*
+ * vim: set ft=rust:
+ * vim: set ft=reason:
+ */
+/*  Asserts */
 
-assert (1 == 2);
+let assertEquality = fun x y => x === y;
+
+let assertExpectation = fun () => {
+  /* Change the _ to a value that will make the assertion true. */
+  assertEquality true _;
+};
+
+assertExpectation ();
