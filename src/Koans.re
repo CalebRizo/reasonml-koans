@@ -4,9 +4,9 @@
  */
 /*  Asserts */
 
-let assertEquality = fun x y => x === y;
+let assertEquality x y => x === y;
 
-let assertExpectation = fun () => {
+let assertExpectation => {
   /* Change the _ to a value that will make the assertion true. */
   assertEquality true _;
 };
