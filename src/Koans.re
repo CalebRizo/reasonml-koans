@@ -13,8 +13,7 @@ let assertEquality x y message => {
 	}
 };
 
-assertEquality "one" "one" "Strings should be equal.\n";
-assertEquality "two" "two" "Numbers should be equal.\n";
+assertEquality "one" __string__ "Strings should be equal.\n";
 
 print_string "You have obtained enlightenment.\n"
 
