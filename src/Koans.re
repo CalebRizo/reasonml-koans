@@ -4,11 +4,17 @@
  */
 /*  Asserts */
 
-let assertEquality x y => x === y;
+let __string__ = "";
 
-let assertExpectation => {
-  /* Change the _ to a value that will make the assertion true. */
-  assertEquality true _;
+let assertEquality x y message => {
+	if (x != y) {
+		print_string message;
+		exit 0; 
+	}
 };
 
-assertExpectation ();
+assertEquality "one" "one" "Strings should be equal.\n";
+assertEquality "two" "two" "Numbers should be equal.\n";
+
+print_string "You have obtained enlightenment.\n"
+
