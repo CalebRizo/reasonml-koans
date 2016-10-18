@@ -2,18 +2,11 @@
  * vim: set ft=rust:
  * vim: set ft=reason:
  */
-/*  Asserts */
+let pathToEnlightenment = [
+	One.meditate,
+	Two.meditate
+];
 
-let __string__ = "";
+List.iter (fun f => f()) pathToEnlightenment;
 
-let assertEquality x y message => {
-	if (x != y) {
-		print_string message;
-		exit 0; 
-	}
-};
-
-assertEquality "one" __string__ "Strings should be equal.\n";
-
-print_string "You have obtained enlightenment.\n"
-
+print_string "You have obtained enlightenment.";
