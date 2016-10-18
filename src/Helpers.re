@@ -6,9 +6,9 @@
 let __string__ = "";
 let __number__ = 0;
 
-let assertEquality expected actual message => {
+let assertEquality path expected actual message => {
 	if (expected != actual) {
-		print_string message;
+		print_string ("src/koans/" ^ path ^ ".re: " ^ message ^ "\n");
 		exit 0;
-	}
-};
+	}	
+}

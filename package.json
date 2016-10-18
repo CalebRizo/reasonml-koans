@@ -27,7 +27,7 @@
   "scripts": {
 
     "postinstall": "npm run reasonBuild",
-    "reasonBuild": "eval $(dependencyEnv) && nopam && rebuild -I src ./src/Koans.native 2>&1 | refmterr",
+    "reasonBuild": "eval $(dependencyEnv) && nopam && rebuild -I src -I src/koans ./src/Koans.native 2>&1 | refmterr",
     "reasonbuild": "npm run reasonBuild",
 
     "start": "eval $(dependencyEnv) && ./_build/src/Koans.native",

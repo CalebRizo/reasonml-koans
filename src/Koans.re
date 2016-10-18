@@ -3,10 +3,10 @@
  * vim: set ft=reason:
  */
 let pathToEnlightenment = [
-	One.meditate,
-	Two.meditate
+	AboutAsserts.meditate,
+	AboutLet.meditate
 ];
 
 List.iter (fun f => f()) pathToEnlightenment;
 
-print_string "You have obtained enlightenment.";
+print_string "Congratulations:  you have obtained enlightenment.\n";
