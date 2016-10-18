@@ -4,10 +4,8 @@
  */
 include Helpers;
 
-let assertEqual = assertEquality "AboutLet";
+let assertEqual = assertEquality "AboutPrimitives";
 
 let meditate => {
-	let x = 5;
-
-  	assertEqual x __number__ "Numbers should be equal.";
+  	assertEqual "FIXME" __string__ "AboutPrimitives has no implementation.";
 };

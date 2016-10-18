@@ -4,7 +4,10 @@
  */
 let pathToEnlightenment = [
 	AboutAsserts.meditate,
-	AboutLet.meditate
+	AboutPrimitives.meditate,
+	AboutLet.meditate,
+	AboutTypes.meditate,
+	AboutTuples.meditate
 ];
 
 List.iter (fun f => f()) pathToEnlightenment;

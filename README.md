@@ -10,3 +10,7 @@ cd reasonml-koans
 npm install
 npm run koans 
 ```
+
+## Inspiration
+
+Reason Koans was inspired by [F# Koans](https://github.com/ChrisMarinos/FSharpKoans) by Chris Marinos, which was inspired [Ruby Koans](http://rubykoans.com/).
