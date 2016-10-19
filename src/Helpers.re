@@ -5,6 +5,7 @@
  */
 let __string__ = "";
 let __number__ = 0;
+let __bool__ = false;
 
 let assertEquality path expected actual message => {
 	if (expected != actual) {

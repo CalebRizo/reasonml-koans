@@ -23,5 +23,5 @@ let assertEqual = assertEquality "AboutAsserts";
 *******/
 
 let meditate => {
-  assertEqual "one" __string__ "Strings should be equal.";
+  assertEqual true __bool__ "true should be true.";
 };
