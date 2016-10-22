@@ -23,7 +23,7 @@ let assertEqual = assertEquality "AboutAsserts";
    next to an assertion that is checking the equality of two values.  Modify
    the code so that the assertion passes and save the file.  Once you have done
    this, run the koans again and you will be presented with a different message
-   pointing to another source file containing an assertion error.
+   pointing to another assertion error.
 
    Continue fixing the code until you have reached enlightenment.
 
