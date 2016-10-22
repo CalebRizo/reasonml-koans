@@ -29,6 +29,9 @@ let assertEqual = assertEquality "AboutAsserts";
 
  *******/
 let meditate () => {
-  let x = __bool__; /* Change __bool__ to the correct value. */
-  assertEqual true x "true should be true."
+  /* Change __bool__ to the correct value. */
+  assertEqual true __bool__ "true should be true.";
+
+  /* Change ___bool___ to the correct value. */
+  assertEqual false ___bool___ "false should be false.";
 };
