@@ -19,4 +19,12 @@ let meditate () => {
   assertEqual 123.45 __float__ "Floats are numbers containing decimals."
 
   assertEqual -123.45 __float__ "Floats can be negative, too.";
+
+  assertEqual (13 + 6) __int__ "Integers are added with \"+\".";
+
+  assertEqual (13.0 +. 6.0) __float__ "Floats use a different addition symbol.";
+
+  assertEqual (9 / 3 * 2) __int__ "Integers use the normal divide and multiply sybmols.";
+
+  assertEqual (9.0 / 3.0 * 2.0) __float__ "Like addition, floats have their own divide and multiply symbols.";
 };
