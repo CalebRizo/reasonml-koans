@@ -16,7 +16,7 @@ let meditate () => {
 
   assertEqual -100 __int__ "Integers can be negative."
 
-  assertEqual 123.45 __float__ "Floats are numbers containing decimals."
+  assertEqual 123.45 __float__ "Floats have a decimal."
 
   assertEqual -123.45 __float__ "Floats can be negative, too.";
 
