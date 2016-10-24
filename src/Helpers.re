@@ -5,11 +5,15 @@
 
 let __string__ = "";
 
-let __number__ = 0;
+let __int__ = 0;
+
+let __float__ = 0.0;
 
 let __bool__ = false;
 
 let ___bool___ = true;
+
+let __char__ = 'a';
 
 let assertEquality path expected actual message =>
   if (expected != actual) {

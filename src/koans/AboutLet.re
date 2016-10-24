@@ -9,5 +9,5 @@ let assertEqual = assertEquality "AboutLet";
 
 let meditate () => {
   let x = 5;
-  assertEqual x __number__ "Numbers should be equal."
+  assertEqual x __int__ "Numbers should be equal."
 };
