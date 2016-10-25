@@ -21,11 +21,31 @@ let meditate () => {
 
   assertEqual (-123.45) __float__ "Floats can be negative, too.";
 
-  assertEqual (13 + 6) __int__ "Integers are added with \"+\".";
+  let intSum = 13 + 6;
 
-  assertEqual (13.0 +. 6.0) __float__ "Floats use a different addition symbol.";
+  assertEqual intSum __int__ "Integers are added with \"+\".";
 
-  assertEqual (9 / 3 * 2) __int__ "Integers use the normal divide and multiply sybmols.";
+  let floatSum = 13.0 +. 6.0;
 
-  assertEqual (9.0 /. 3.0 *. 2.0) __float__ "Like addition, floats have their own divide and multiply symbols.";
+  assertEqual floatSum __float__ "Floats use a different addition symbol.";
+
+  let intResult = 9 / 3 * 2;
+
+  assertEqual intResult __int__ "Integers use the normal divide and multiply sybmols.";
+
+  let floatResult = 9.0 /. 3.0 *. 2.0;
+
+  assertEqual floatResult __float__ "Like addition, floats have their own divide and multiply symbols.";
+
+  let sentence = "Reason" ^ " is " ^ "fun.";
+
+  assertEqual sentence __string__ "Strings are concatenated with \"^\".";
+
+  let nums = [4, 5, 6];
+
+  assertEqual nums [__int__] "Lists are comma-separated values surrounded by brackets.";
+
+  let firstSix = [1, 2, 3, ...nums];
+
+  assertEqual firstSix [__int__] "The spread operator allows appending to lists.";
 };
