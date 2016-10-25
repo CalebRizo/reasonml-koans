@@ -5,7 +5,7 @@
 
 include Helpers;
 
-let assertEqual = assertEquality "AboutAsserts";
+let assertEqual a b message => assertEquality "AboutAsserts" a b message;
 
 
 /******
