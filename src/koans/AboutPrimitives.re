@@ -43,9 +43,9 @@ let meditate () => {
 
   let nums = [4, 5, 6];
 
-  assertEqual nums [__int__] "Lists are comma-separated values surrounded by brackets.";
+  assertEqual nums [__int__] "Lists are comma-separated values of the same type surrounded by brackets.";
 
-  let firstSix = [1, 2, 3, ...nums];
+  let moreNums = [1, 2, 3, ...nums];
 
-  assertEqual firstSix [__int__] "The spread operator allows appending to lists.";
+  assertEqual moreNums [__int__] "The spread operator allows appending to lists.";
 };
