@@ -30,7 +30,7 @@ let meditate () => {
 
   assertEqual num3 __int__ "A second style allows you to type assert the right-hand side of an expression.";
 
-  /* You cannot use type aliases inside a block, so it is defined above. */
+  /* You cannot define type aliases inside a block, so it is defined above. */
   let num4 = (8 : foo);
 
   assertEqual num4 __int__ "Type aliases allow you to refer to a type by another name.";
