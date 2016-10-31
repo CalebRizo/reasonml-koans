@@ -31,7 +31,7 @@
     "reasonbuild": "npm run reasonBuild",
 
     "start": "eval $(dependencyEnv) && ./_build/src/Koans.native",
-    "koans": "eval $(dependencyEnv) && npm run reasonbuild && ./_build/src/Koans.native",
+    "koans": "eval $(dependencyEnv) && npm --silent run reasonbuild && ./_build/src/Koans.native",
 
     "clean": "eval $(dependencyEnv) && nopam && rebuild -clean",
     "top": "eval $(dependencyEnv) && rtop",
