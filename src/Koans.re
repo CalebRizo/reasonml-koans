@@ -10,7 +10,8 @@ let pathToEnlightenment = [
   AboutTypes.meditate,
   AboutTuples.meditate,
   AboutRecords.meditate,
-  AboutDestructuring.meditate
+  AboutDestructuring.meditate,
+  AboutFunctions.meditate
 ];
 
 List.iter (fun f => f ()) pathToEnlightenment;
