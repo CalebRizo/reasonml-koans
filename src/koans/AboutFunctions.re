@@ -43,6 +43,7 @@ let meditate () => {
 
   assertEqual one __int__ "You can pass tuples to functions with 0 arguments.";
 
+  /* See the person definition above. */
   let p = {firstName: "Joe", lastName: "Smith"};
 
   let joinNames = fun {firstName: fn, lastName: ln} => fn ^ " " ^ ln;
