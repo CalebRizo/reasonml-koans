@@ -7,7 +7,7 @@ include Helpers;
 
 let assertEqual a b message => assertEquality "AboutFunctions" a b message;
 
-
+type person = {firstName: string, lastName: string};
 
 let meditate () => {
   let addTwo = fun (num) => 2 + num;
@@ -26,7 +26,28 @@ let meditate () => {
 
   assertEqual sum3 __int__ "You may omit the parentheses when calling a function for simple, \"one unit\" arguments.";
 
+  /* addTwo 5 is two arguments, so they must be surrounded by parentheses. */
   let sum4 = addThree (addTwo 5);
 
-  assertEqual sum4 __int__ "Group arguments using parentheses to create simple \"one unit\" arguments."
+  assertEqual sum4 __int__ "Group arguments using parentheses to create simple \"one unit\" arguments.";
+
+  let addNums = fun (num1, num2) => num1 + num2;
+
+  let total = addNums (4, 9);
+
+  assertEqual total __int__ "Use a tuple to pass multiple arguments to a function.";
+
+  let gimmeOne = fun () => 1;
+
+  let one = gimmeOne();
+
+  assertEqual one __int__ "You can pass tuples to functions with 0 arguments.";
+
+  let p = {firstName: "Joe", lastName: "Smith"};
+
+  let joinNames = fun {firstName: fn, lastName: ln} => fn ^ " " ^ ln;
+
+  let fullName = joinNames p;
+
+  assertEqual fullName __string__ "Records can be destructured in function arguments.";
 };
