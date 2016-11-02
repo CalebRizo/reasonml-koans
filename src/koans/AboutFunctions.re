@@ -39,9 +39,21 @@ let meditate () => {
 
   let gimmeOne = fun () => 1;
 
-  let one = gimmeOne();
+  let one = gimmeOne ();
 
   assertEqual one __int__ "You can pass tuples to functions with 0 arguments.";
+
+  let sayHiToTheWorld () => {
+    let firstPart = "Hello";
+    let secondPart = " ";
+    let thirdPart = "World";
+
+    firstPart ^ secondPart ^ thirdPart
+  };
+
+  let worldGreeting = sayHiToTheWorld ();
+
+  assertEqual worldGreeting __string__ "Use a block expression to create temporary bindings in a function.";
 
   /* See the person definition above. */
   let p = {firstName: "Joe", lastName: "Smith"};
@@ -51,4 +63,32 @@ let meditate () => {
   let fullName = joinNames p;
 
   assertEqual fullName __string__ "Records can be destructured in function arguments.";
+
+  let rec fac num =>
+    if (num <= 1) {
+      1
+    } else {
+      num * fac (num - 1)
+    };
+
+  let number = fac 4;
+
+  assertEqual number __int__ "Use the \"rec\" keyword to define a recursive function.";
+
+  let rec isEven num =>
+    if (num == 0) {
+      true
+    } else {
+      isOdd (num - 1)
+    }
+  and isOdd num =>
+    if (num == 0) {
+      false
+    } else {
+      isEven (num - 1)
+    };
+
+  let isEvenNumber = isEven 4;
+
+  assertEqual isEvenNumber __bool__ "Use the \"rec\" and \"and\" keywords to create mutually recursive functions.";
 };
