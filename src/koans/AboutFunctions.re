@@ -91,4 +91,12 @@ let meditate () => {
   let isEvenNumber = isEven 4;
 
   assertEqual isEvenNumber __bool__ "Use the \"rec\" and \"and\" keywords to create mutually recursive functions.";
+
+  let makeAdder = fun number1 => fun number2 => number1 + number2;
+
+  let addTwo = makeAdder 2;
+
+  let twoPlusThree = addTwo 3;
+
+  assertEqual twoPlusThree __int__ "Functions can return other functions.";
 };
