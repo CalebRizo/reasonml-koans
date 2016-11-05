@@ -13,6 +13,11 @@ type rating =
   | LikedIt
   | LovedIt;
 
+type payment =
+  | Cash
+  | Check int
+  | CreditCard string;
+
 let meditate () => {
   let __rating__ = None;
   let myRating = LovedIt;
@@ -27,4 +32,12 @@ let meditate () => {
   };
 
   assertEqual explanation __string__ "Use a switch expression to evaluate a variant.  All possible values must be present in the switch.";
+
+  let myPayment = Check 100;
+
+  let getCheckNumber = fun (Check num) => num;
+
+  let checkNumber = getCheckNumber myPayment;
+
+  assertEqual checkNumber __int__ "Variant constructor data can be destructured in a function argument.";
 };
