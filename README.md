@@ -1,6 +1,6 @@
 # Reason Koans
 
-Learn the [Reason](https://facebook.github.io/reason/) programming language by fixing tests.
+Learn the [Reason](https://facebook.github.io/reason/) programming language by fixing code.
 
 ## Get Started:
 
