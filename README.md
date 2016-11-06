@@ -4,6 +4,8 @@ Learn the [Reason](https://facebook.github.io/reason/) programming language by f
 
 ## Get Started:
 
+[npm](https://www.npmjs.com) is a prerequisite.  Once you have npm installed, do the following:
+
 ```sh
 git clone https://github.com/inchingforward/reasonml-koans.git
 cd reasonml-koans
