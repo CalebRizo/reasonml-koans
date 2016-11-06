@@ -18,6 +18,10 @@ type payment =
   | Check int
   | CreditCard string;
 
+type tupleVsMultipleArguments =
+  | TupleArgument (int, int)
+  | MultipleArguments int int;
+
 let meditate () => {
   let __rating__ = None;
   let myRating = LovedIt;
@@ -33,6 +37,8 @@ let meditate () => {
 
   assertEqual explanation __string__ "Use a switch expression to evaluate a variant.  All possible values must be present in the switch.";
 
+  /* See the payment variant definition above. */
+
   let myPayment = Check 100;
 
   let getCheckNumber = fun (Check num) => num;
@@ -40,4 +46,21 @@ let meditate () => {
   let checkNumber = getCheckNumber myPayment;
 
   assertEqual checkNumber __int__ "Variant constructor data can be destructured in a function argument.";
+
+  /* See the tupleVsMultipleArguments variant definition above. */
+
+  let sumNums = fun arg => switch arg {
+    | TupleArgument (a, b) => a + b
+    | MultipleArguments a b => a + b
+  };
+
+  let nums1 = TupleArgument (1, 3);
+  let tupleResult = sumNums nums1;
+
+  assertEqual tupleResult __int__ "Using a tuple in a variant constructor is not the same as using multiple arguments.";
+
+  let nums2 = MultipleArguments 2 5;
+  let multipleArgsResult = sumNums nums2;
+
+  assertEqual multipleArgsResult __int__ "Using multiple arguments in a variant constructor is not the same as using a tuple.";
 };
