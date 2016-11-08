@@ -5,6 +5,8 @@
 
 include Helpers;
 
+type resultHolder = {mutable result: int};
+
 let assertEqual a b message => assertEquality "AboutLoopsAndTests" a b message;
 
 let meditate () => {
@@ -45,4 +47,20 @@ let meditate () => {
   let result = positive 2;
 
   assertEqual result __bool__ "Ternary statements can check simple test cases.";
+
+  let holder = {result: 1};
+
+  for i in 1 to 3 {
+    holder.result = holder.result * 2;
+  };
+
+  assertEqual holder.result __int__ "For loops can count up.";
+
+  holder.result = 1;
+
+  for i in 5 downto 1 {
+    holder.result = holder.result * 3;
+  };
+
+  assertEqual holder.result __int__ "For loops can also count down.";
 };
