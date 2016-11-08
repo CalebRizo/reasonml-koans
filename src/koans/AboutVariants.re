@@ -13,20 +13,15 @@ type rating =
   | LikedIt
   | LovedIt;
 
-type payment =
-  | Cash
-  | Check int
-  | CreditCard string;
-
 type tupleVsMultipleArguments =
   | TupleArgument (int, int)
   | MultipleArguments int int;
 
 let meditate () => {
-  let __rating__ = None;
+  let __replaceme__ = None;
   let myRating = LovedIt;
 
-  assertEqual myRating __rating__ "Variants allow you to select one value from a set of values.";
+  assertEqual myRating __replaceme__ "Variants allow you to select one value from a set of values.";
 
   let explanation = switch myRating {
     | None => "I have no opinion."
@@ -36,16 +31,6 @@ let meditate () => {
   };
 
   assertEqual explanation __string__ "Use a switch expression to evaluate a variant.  All possible values must be present in the switch.";
-
-  /* See the payment variant definition above. */
-
-  let myPayment = Check 100;
-
-  let getCheckNumber = fun (Check num) => num;
-
-  let checkNumber = getCheckNumber myPayment;
-
-  assertEqual checkNumber __int__ "Variant constructor data can be destructured in a function argument.";
 
   /* See the tupleVsMultipleArguments variant definition above. */
 
