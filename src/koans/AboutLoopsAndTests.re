@@ -10,15 +10,15 @@ type resultHolder = {mutable result: int};
 let assertEqual a b message => assertEquality "AboutLoopsAndTests" a b message;
 
 let meditate () => {
-  let posOrNeg = fun num => {
+  let negativeOrNotNegative = fun num => {
     if (num < 0) {
       "negative";
     } else {
-      "positive";
+      "notnegative";
     }
   };
 
-  let result = posOrNeg 5;
+  let result = negativeOrNotNegative 5;
 
   assertEqual result __string__ "Use an if statement to test values.";
 
