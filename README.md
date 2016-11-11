@@ -17,7 +17,7 @@ You will be presented with the following error message:
 
     src/koans/AboutAsserts.re: true should be true.
 
-This message is telling you that there is a problem in the `src/koans/AboutAsserts.re` Reason source file.  Find the error message in the source file and change the code to make it work, then run `npm run koans` again to find the next error.  Once you have fixed all errors, you will achieve Reason enlightenment.
+This message is telling you that there is a problem in the `src/koans/AboutAsserts.re` Reason source file.  Find the error message in the source file and change the code to make it work, then run `npm run koans` again to find the next error.  Once you have fixed all errors, you will achieve Reasonable enlightenment.
 
 ## Status
 

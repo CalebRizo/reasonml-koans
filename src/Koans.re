@@ -18,4 +18,4 @@ let pathToEnlightenment = [
 
 List.iter (fun f => f ()) pathToEnlightenment;
 
-print_string "Congratulations:  you have obtained enlightenment.\n";
+print_string "Congratulations:  you have obtained Reasonable enlightenment.\n";
