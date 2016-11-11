@@ -10,7 +10,7 @@ let assertEqual = assertEquality "AboutLet";
 let meditate () => {
   let animal = "dog";
 
-  assertEqual animal __string__ "let binds names to values.";
+  assertEqual animal __string__ "The \"let\" keyword binds names to values.";
 
   let animal = "cat";
 

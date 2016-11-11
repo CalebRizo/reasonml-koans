@@ -41,7 +41,7 @@ let meditate () => {
 
   let one = gimmeOne ();
 
-  assertEqual one __int__ "You can pass tuples to functions with 0 arguments.";
+  assertEqual one __int__ "You can pass empty tuples to functions with 0 arguments.";
 
   let sayHiToTheWorld () => {
     let firstPart = "Hello";
