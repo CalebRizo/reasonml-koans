@@ -25,4 +25,4 @@ This message is telling you that there is a problem in the `src/koans/AboutAsser
 
 ## Inspiration
 
-Reason Koans was inspired by [F# Koans](https://github.com/ChrisMarinos/FSharpKoans) by Chris Marinos, which was inspired [Ruby Koans](http://rubykoans.com/).
+Reason Koans was inspired by [F# Koans](https://github.com/ChrisMarinos/FSharpKoans) by Chris Marinos, which was inspired by [Ruby Koans](http://rubykoans.com/).
