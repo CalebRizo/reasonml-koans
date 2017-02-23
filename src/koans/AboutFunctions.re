@@ -1,8 +1,3 @@
-/*
- * vim: set ft=rust:
- * vim: set ft=reason:
- */
-
 include Helpers;
 
 let assertEqual a b message => assertEquality "AboutFunctions" a b message;

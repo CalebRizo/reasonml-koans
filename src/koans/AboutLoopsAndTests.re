@@ -1,8 +1,3 @@
-/*
- * vim: set ft=rust:
- * vim: set ft=reason:
- */
-
 include Helpers;
 
 type resultHolder = {mutable result: int};
