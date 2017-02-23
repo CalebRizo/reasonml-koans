@@ -1,8 +1,3 @@
-/*
- * vim: set ft=rust:
- * vim: set ft=reason:
- */
-
 let __string__ = "";
 
 let __int__ = 0;
