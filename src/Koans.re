@@ -1,8 +1,3 @@
-/*
- * vim: set ft=rust:
- * vim: set ft=reason:
- */
-
 let pathToEnlightenment = [
   AboutAsserts.meditate,
   AboutPrimitives.meditate,
